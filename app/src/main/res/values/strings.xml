@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Grand Mint Demo App</string>
+    <string name="emailId">Enter Email ID</string>
+    <string name="Username">Enter User ID</string>
+    <string name="password">Enter Password</string>
+    <string name="password_len">Password should be greater than 6 letters</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="complete_form_warning">Fill All the Fields</string>
+    <string name="account_success">Account Creatation Success</string>
+    <string name="account_failed">Account Creatation Failed</string>
+    <string name="verification_mail">Verification email successfully sent to </string>
+    <string name="verification_mail_fail">Failed to send Verification mail </string>
+    <string name="signed_out">Signed Out Of Application</string>
+</resources>

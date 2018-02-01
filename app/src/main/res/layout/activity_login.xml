@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context="com.demo_app.jitcodez.grandmintdemoapp.LoginActivity"
+
+    >
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/login_emailId"
+        android:hint="@string/emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_img"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:inputType="textPassword"
+        android:hint="@string/Username"
+        android:layout_below="@+id/login_emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_below="@id/login_password"
+        android:text="Login"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_below="@id/signin_button"
+        android:text="SignUP"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

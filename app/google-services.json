@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "305653078718",
+    "firebase_url": "https://grandmintdemoapp.firebaseio.com",
+    "project_id": "grandmintdemoapp",
+    "storage_bucket": "grandmintdemoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305653078718:android:68fc6c23c9887710",
+        "android_client_info": {
+          "package_name": "com.demo_app.jitcodez.grandmintdemoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305653078718-hqpe6aclba5u9b9tl8cpg05p5ti8g782.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demo_app.jitcodez.grandmintdemoapp",
+            "certificate_hash": "2b2f64c3e73bcaee796fa8b7bf23e69dd30a05b5"
+          }
+        },
+        {
+          "client_id": "305653078718-19km142jnc7kkvei1ed7rcvrq01bt95v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuwDNj6i0CZw8o05_-8vnWaiSy1CpgKbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305653078718-19km142jnc7kkvei1ed7rcvrq01bt95v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
