@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -17,6 +18,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     
     EditText emailText;
     EditText passwordText;
+    ProgressBar pb;
     Intent in;
     FirebaseAuth mFirebaseAuth;
     FirebaseAuth.AuthStateListener authStateListener;
@@ -27,7 +29,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mFirebaseAuth=FirebaseAuth.getInstance();
         emailText=(EditText)findViewById(R.id.login_emailId);
         passwordText=(EditText)findViewById(R.id.login_password);
-
+        pb=(ProgressBar)findViewById(R.id.login_pb);
 
     }
     @Override
@@ -45,6 +47,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+        pb.setVisibility(View.VISIBLE);
+
         switch (v.getId())
         {
             case R.id.signup_button:
@@ -57,20 +61,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 String pass=passwordText.getText().toString();
                 if(emailId.isEmpty())
                 {
+
                     Toast.makeText(this,R.string.emailId,Toast.LENGTH_LONG).show();
 
                 }
                 else if(pass.isEmpty())
                 {
+
                     Toast.makeText(this,R.string.password,Toast.LENGTH_LONG).show();
 
                 }
                 else if(pass.length()<6)
                 {
+
                     Toast.makeText(this,R.string.password_len,Toast.LENGTH_LONG).show();
 
                 }
                 else {
+
                     mFirebaseAuth.signInWithEmailAndPassword(emailId,pass).addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {

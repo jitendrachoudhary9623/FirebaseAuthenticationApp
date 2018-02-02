@@ -11,4 +11,6 @@
     <string name="verification_mail">Verification email successfully sent to </string>
     <string name="verification_mail_fail">Failed to send Verification mail </string>
     <string name="signed_out">Signed Out Of Application</string>
+    <string name="firebase_parent_node">user</string>
+    <string name="firebase_child_node">name</string>
 </resources>
